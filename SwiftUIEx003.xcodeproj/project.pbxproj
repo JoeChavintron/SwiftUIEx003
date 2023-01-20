@@ -14,6 +14,13 @@
 		AC038B98297A8B0E00EF0677 /* SwiftUIEx003Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038B97297A8B0E00EF0677 /* SwiftUIEx003Tests.swift */; };
 		AC038BA2297A8B0E00EF0677 /* SwiftUIEx003UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BA1297A8B0E00EF0677 /* SwiftUIEx003UITests.swift */; };
 		AC038BA4297A8B0E00EF0677 /* SwiftUIEx003UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BA3297A8B0E00EF0677 /* SwiftUIEx003UITestsLaunchTests.swift */; };
+		AC038BB1297A8B4C00EF0677 /* NewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BB0297A8B4C00EF0677 /* NewCodable.swift */; };
+		AC038BB3297A8B6A00EF0677 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BB2297A8B6A00EF0677 /* Profile.swift */; };
+		AC038BB6297A8BA300EF0677 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BB5297A8BA300EF0677 /* NavView.swift */; };
+		AC038BB8297A8BB200EF0677 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BB7297A8BB200EF0677 /* ProfileView.swift */; };
+		AC038BBA297A8BC700EF0677 /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BB9297A8BC700EF0677 /* ProfileListView.swift */; };
+		AC038BBB297A8BF900EF0677 /* Profile.json in Resources */ = {isa = PBXBuildFile; fileRef = AC038BB4297A8B8800EF0677 /* Profile.json */; };
+		AC038BC0297A8C3400EF0677 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC038BBF297A8C3400EF0677 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		AC038B9D297A8B0E00EF0677 /* SwiftUIEx003UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIEx003UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC038BA1297A8B0E00EF0677 /* SwiftUIEx003UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIEx003UITests.swift; sourceTree = "<group>"; };
 		AC038BA3297A8B0E00EF0677 /* SwiftUIEx003UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIEx003UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC038BB0297A8B4C00EF0677 /* NewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCodable.swift; sourceTree = "<group>"; };
+		AC038BB2297A8B6A00EF0677 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		AC038BB4297A8B8800EF0677 /* Profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Profile.json; sourceTree = "<group>"; };
+		AC038BB5297A8BA300EF0677 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		AC038BB7297A8BB200EF0677 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AC038BB9297A8BC700EF0677 /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		AC038BBF297A8C3400EF0677 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,12 @@
 		AC038B85297A8B0D00EF0677 /* SwiftUIEx003 */ = {
 			isa = PBXGroup;
 			children = (
+				AC038BC2297A8C5100EF0677 /* View */,
+				AC038BC1297A8C4300EF0677 /* Common */,
+				AC038BBE297A8C2500EF0677 /* ViewModel */,
+				AC038BBD297A8C1600EF0677 /* Model */,
+				AC038BBC297A8C0900EF0677 /* Json */,
 				AC038B86297A8B0D00EF0677 /* SwiftUIEx003App.swift */,
-				AC038B88297A8B0D00EF0677 /* ContentView.swift */,
 				AC038B8A297A8B0E00EF0677 /* Assets.xcassets */,
 				AC038B8C297A8B0E00EF0677 /* Preview Content */,
 			);
@@ -125,6 +143,49 @@
 				AC038BA3297A8B0E00EF0677 /* SwiftUIEx003UITestsLaunchTests.swift */,
 			);
 			path = SwiftUIEx003UITests;
+			sourceTree = "<group>";
+		};
+		AC038BBC297A8C0900EF0677 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				AC038BB4297A8B8800EF0677 /* Profile.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		AC038BBD297A8C1600EF0677 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC038BB2297A8B6A00EF0677 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC038BBE297A8C2500EF0677 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC038BBF297A8C3400EF0677 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC038BC1297A8C4300EF0677 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC038BB0297A8B4C00EF0677 /* NewCodable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AC038BC2297A8C5100EF0677 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC038B88297A8B0D00EF0677 /* ContentView.swift */,
+				AC038BB5297A8BA300EF0677 /* NavView.swift */,
+				AC038BB7297A8BB200EF0677 /* ProfileView.swift */,
+				AC038BB9297A8BC700EF0677 /* ProfileListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +294,7 @@
 			files = (
 				AC038B8E297A8B0E00EF0677 /* Preview Assets.xcassets in Resources */,
 				AC038B8B297A8B0E00EF0677 /* Assets.xcassets in Resources */,
+				AC038BBB297A8BF900EF0677 /* Profile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC038BB1297A8B4C00EF0677 /* NewCodable.swift in Sources */,
+				AC038BB3297A8B6A00EF0677 /* Profile.swift in Sources */,
 				AC038B89297A8B0D00EF0677 /* ContentView.swift in Sources */,
+				AC038BB6297A8BA300EF0677 /* NavView.swift in Sources */,
+				AC038BB8297A8BB200EF0677 /* ProfileView.swift in Sources */,
+				AC038BBA297A8BC700EF0677 /* ProfileListView.swift in Sources */,
+				AC038BC0297A8C3400EF0677 /* ProfileViewModel.swift in Sources */,
 				AC038B87297A8B0D00EF0677 /* SwiftUIEx003App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
